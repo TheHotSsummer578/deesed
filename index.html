@@ -3,83 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quagsire Hub</title>
-  <meta property="og:title" content="Quagsire Hub" />
-  <meta property="og:description" content="Official Quagsire Zone 🐟" />
-  <meta property="og:image" content="https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif" />
-  <meta name="theme-color" content="#00ccff" />
+  <title>i5i.online - Quagsire Central 🐟</title>
+
+  <!-- Discord Embed -->
+  <meta property="og:title" content="Quagsire Nation 🌊" />
+  <meta property="og:description" content="Best fish site. Quagsire supremacy 🐟💙" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/b/bd/Quagsire.png" />
+  <meta property="og:url" content="https://i5i.online" />
+  <meta name="theme-color" content="#5599ff" />
+
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f8ff;
-      text-align: center;
-      color: #333;
-    }
-    header {
-      background: #007acc;
-      padding: 20px;
+      background-color: #001f33;
       color: white;
-      font-size: 28px;
-      font-weight: bold;
+      text-align: center;
+      font-family: 'Comic Sans MS', sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    .quag-img {
-      width: 180px;
-      margin: 20px;
-      transition: transform 0.2s;
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
     }
-    .quag-img:hover {
-      transform: scale(1.1) rotate(5deg);
+    img {
+      margin: 20px auto;
+      max-width: 300px;
+      border: 5px solid #00ccff;
+      border-radius: 20px;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    button#susBtn {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      padding: 8px 12px;
-      background: #ddd;
-      border: 1px solid #aaa;
-      border-radius: 5px;
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #00ccff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
     }
+    button:hover {
+      background-color: #0099cc;
+    }
     footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
+      margin-top: 60px;
+      color: #ccc;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>🐟 Welcome to Quagsire Zone 🐟</header>
 
-  <div class="gallery">
-    <img class="quag-img" src="https://media.tenor.com/WdvbHk5ya4oAAAAd/quagsire.gif" alt="quagsire 1">
-    <img class="quag-img" src="https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif" alt="quagsire 2">
-    <img class="quag-img" src="https://media.tenor.com/VYGAMTiqnGQAAAAC/pokemon-quagsire.gif" alt="quagsire 3">
-    <img class="quag-img" src="https://media.tenor.com/FzvTtfBzuwUAAAAC/quagsire.gif" alt="quagsire 4">
-  </div>
+  <h1>Welcome to Quagsire HQ 🌊</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Quagsire.png" alt="Quagsire looking majestic">
+  <p>Only the strongest survive... and they're all Quagsire.</p>
 
-  <!-- EASTER EGG BUTTON -->
-  <button id="susBtn">?</button>
+  <button onclick="toggleAudio()">Toggle PIPO 🔊</button>
+
+  <!-- Audio -->
+  <audio id="pipo" src="https://raw.githubusercontent.com/TheHotSsummer578/deesed/main/assets/pipo.mp3" autoplay loop></audio>
 
   <script>
-    document.getElementById("susBtn").addEventListener("click", function() {
-      alert("🧁 You found the secret Quagsire cupcake!");
-      let img = document.createElement("img");
-      img.src = "https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif";
-      img.style.position = "fixed";
-      img.style.bottom = "60px";
-      img.style.right = "60px";
-      img.style.width = "120px";
-      img.style.zIndex = "9999";
-      document.body.appendChild(img);
-    });
+    const audio = document.getElementById('pipo');
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
   </script>
 
-  <footer>Made for the Quagsire enjoyers 🐟 | i5i.online</footer>
+  <footer>Made with 💙 for the biggest Quagsire fan</footer>
+
 </body>
 </html>
