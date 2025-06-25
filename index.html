@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quagsire Hub</title>
+  <meta property="og:title" content="Quagsire Hub" />
+  <meta property="og:description" content="Official Quagsire Zone 🐟" />
+  <meta property="og:image" content="https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif" />
+  <meta name="theme-color" content="#00ccff" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background: #007acc;
+      padding: 20px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .quag-img {
+      width: 180px;
+      margin: 20px;
+      transition: transform 0.2s;
+    }
+    .quag-img:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button#susBtn {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 8px 12px;
+      background: #ddd;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>🐟 Welcome to Quagsire Zone 🐟</header>
+
+  <div class="gallery">
+    <img class="quag-img" src="https://media.tenor.com/WdvbHk5ya4oAAAAd/quagsire.gif" alt="quagsire 1">
+    <img class="quag-img" src="https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif" alt="quagsire 2">
+    <img class="quag-img" src="https://media.tenor.com/VYGAMTiqnGQAAAAC/pokemon-quagsire.gif" alt="quagsire 3">
+    <img class="quag-img" src="https://media.tenor.com/FzvTtfBzuwUAAAAC/quagsire.gif" alt="quagsire 4">
+  </div>
+
+  <!-- EASTER EGG BUTTON -->
+  <button id="susBtn">?</button>
+
+  <script>
+    document.getElementById("susBtn").addEventListener("click", function() {
+      alert("🧁 You found the secret Quagsire cupcake!");
+      let img = document.createElement("img");
+      img.src = "https://media.tenor.com/TBZzD3JSl58AAAAC/quagsire-cute.gif";
+      img.style.position = "fixed";
+      img.style.bottom = "60px";
+      img.style.right = "60px";
+      img.style.width = "120px";
+      img.style.zIndex = "9999";
+      document.body.appendChild(img);
+    });
+  </script>
+
+  <footer>Made for the Quagsire enjoyers 🐟 | i5i.online</footer>
+</body>
+</html>
